@@ -51,15 +51,16 @@
 <body>
 <main>
   <h1>Politique de confidentialité de Souffl</h1>
-  <p class="date">Dernière mise à jour : 26 octobre 2026</p>
+  <p class="date">Dernière mise à jour : 25 novembre 2026</p>
 
   <div class="summary">
     <p><strong>En bref</strong></p>
     <ul>
       <li>Souffl ne demande <strong>aucun compte</strong> : ni nom, ni e-mail, ni mot de passe.</li>
       <li>Vos séances, vos tests de souffle, vos réponses et vos réglages restent <strong>sur votre téléphone</strong>. Nous n'y avons pas accès.</li>
-      <li>Seul l'abonnement Souffl Premium passe par des services extérieurs : <strong>Apple</strong> (le paiement) et <strong>RevenueCat</strong> (la vérification de l'abonnement).</li>
-      <li>Aucune publicité, aucune statistique d'usage, aucun suivi entre applications.</li>
+      <li>L'abonnement Souffl Premium passe par <strong>Apple</strong> (le paiement) et <strong>RevenueCat</strong> (la vérification de l'abonnement).</li>
+      <li>Souffl envoie des <strong>statistiques d'usage anonymes</strong> à <strong>PostHog</strong>, hébergé dans l'Union européenne, pour comprendre comment l'app est utilisée et l'améliorer. Elles ne contiennent ni vos réponses, ni vos mesures, ni rien qui dise qui vous êtes.</li>
+      <li>Aucune publicité, aucun suivi entre applications.</li>
     </ul>
   </div>
 
@@ -103,8 +104,21 @@
       </ul>
     </li>
   </ul>
+  <p>Pour que les statistiques décrites ci-dessous restent cohérentes, RevenueCat reçoit aussi l'identifiant anonyme utilisé pour ces statistiques, et transmet à PostHog les étapes de votre abonnement (début de l'essai, achat, renouvellement, résiliation), sans aucune donnée de paiement.</p>
   <p><strong>Pourquoi :</strong> vous fournir l'abonnement que vous avez choisi et vous donner accès à Souffl Premium (exécution du contrat).</p>
   <p><strong>Combien de temps :</strong> RevenueCat conserve ces informations tant qu'elles sont utiles pour gérer votre abonnement, et selon ses propres règles. Vous pouvez nous demander leur suppression à tout moment (voir plus bas). Apple conserve l'historique de vos achats selon sa propre politique de confidentialité.</p>
+
+  <h3>Les statistiques d'usage (PostHog)</h3>
+  <p>Pour savoir comment l'app est utilisée et où elle peut être améliorée, Souffl envoie des statistiques d'usage à <strong>PostHog</strong>, sur des serveurs situés dans l'Union européenne. PostHog reçoit :</p>
+  <ul>
+    <li>un identifiant anonyme, créé au hasard au premier lancement, qui n'est relié à aucun nom ni e-mail ;</li>
+    <li>les grandes étapes de votre parcours : l'ouverture et la fermeture de l'app, son installation et ses mises à jour, les écrans du questionnaire de départ que vous avez vus (pas vos réponses), l'affichage de l'écran d'abonnement, un achat commencé, terminé ou annulé, une séance commencée ou terminée (laquelle, et sa durée) ;</li>
+    <li>si vous êtes abonné ou non ;</li>
+    <li>des informations techniques : le modèle de votre téléphone, la version d'iOS et de l'app, la langue, le fuseau horaire, et le pays et la ville approximatifs déduits de votre adresse IP. L'adresse IP elle-même n'est pas conservée.</li>
+  </ul>
+  <p><strong>Ce qui n'est jamais envoyé :</strong> vos réponses au questionnaire, vos temps et scores au test de souffle, votre ressenti après les séances, vos horaires, et plus généralement tout ce que vous saisissez dans l'app.</p>
+  <p><strong>Pourquoi :</strong> mesurer l'usage de l'app pour l'améliorer (intérêt légitime). Ces statistiques ne servent ni à la publicité ni à vous suivre dans d'autres applications, et ne sont ni vendues ni partagées.</p>
+  <p><strong>Combien de temps :</strong> PostHog conserve ces statistiques selon ses propres règles de conservation. Vous pouvez vous y opposer ou demander leur suppression à tout moment (voir plus bas).</p>
 
   <h2>4. Les services tiers utilisés</h2>
   <div class="table-wrap">
@@ -122,8 +136,14 @@
         <tr>
           <td>RevenueCat, Inc. (États-Unis)</td>
           <td>Vérification de l'abonnement et des prix</td>
-          <td>Identifiant anonyme, historique d'achats, langue, devise, adresse IP</td>
+          <td>Identifiant anonyme, identifiant anonyme des statistiques, historique d'achats, langue, devise, adresse IP</td>
           <td><a href="https://www.revenuecat.com/privacy/">revenuecat.com</a></td>
+        </tr>
+        <tr>
+          <td>PostHog, Inc. (données hébergées dans l'Union européenne)</td>
+          <td>Statistiques d'usage</td>
+          <td>Identifiant anonyme, étapes du parcours dans l'app, statut d'abonnement, informations techniques du téléphone, pays et ville approximatifs</td>
+          <td><a href="https://posthog.com/privacy">posthog.com</a></td>
         </tr>
         <tr>
           <td>Supabase, Inc.</td>
@@ -135,7 +155,7 @@
     </table>
   </div>
   <p>Ces prestataires peuvent traiter des données en dehors de l'Union européenne, notamment aux États-Unis. Ces transferts sont encadrés par les garanties prévues par le RGPD, comme les clauses contractuelles types de la Commission européenne.</p>
-  <p>Souffl n'utilise <strong>aucun</strong> outil de publicité, de statistiques d'usage ou de suivi entre applications, et ne vend ni ne partage vos données à des fins commerciales.</p>
+  <p>Souffl n'utilise <strong>aucun</strong> outil de publicité ou de suivi entre applications, et ne vend ni ne partage vos données à des fins commerciales.</p>
 
   <h2>5. Ce que Souffl n'utilise pas</h2>
   <p>Souffl n'accède ni à votre micro, ni à votre appareil photo, ni à votre position, ni à vos contacts, ni à l'app Santé. Le test de souffle se mesure en maintenant votre doigt sur l'écran.</p>
@@ -145,6 +165,7 @@
   <ul>
     <li><strong>Données sur votre téléphone</strong> : vous en avez le contrôle total. Supprimer l'app les efface.</li>
     <li><strong>Données de RevenueCat</strong> : écrivez-nous à <a href="mailto:adrien.entreprise.dev@gmail.com">adrien.entreprise.dev@gmail.com</a>. Comme vous n'avez pas de compte, nous pourrons vous demander une information pour retrouver votre abonnement (par exemple la date de l'achat ou le reçu Apple).</li>
+    <li><strong>Statistiques d'usage (PostHog)</strong> : écrivez-nous à la même adresse pour vous y opposer ou les faire supprimer. Comme elles sont anonymes, nous pourrons vous demander une information pour les retrouver (par exemple la date et l'heure approximatives de votre installation).</li>
     <li><strong>Votre abonnement</strong> : il se gère et se résilie dans les Réglages de l'iPhone, en touchant votre nom, puis Abonnements.</li>
   </ul>
   <p>Nous répondons dans un délai d'un mois. Si vous estimez que vos droits ne sont pas respectés, vous pouvez déposer une réclamation auprès de la CNIL : <a href="https://www.cnil.fr/fr/plaintes">cnil.fr/fr/plaintes</a>.</p>
